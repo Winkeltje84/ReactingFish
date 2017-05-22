@@ -4,6 +4,7 @@ import chai, { expect } from 'chai'
 import chaiEnzyme from 'chai-enzyme'
 import App from './App'
 import Title from './components/Title'
+import FishContainer from './fish/FishContainer'
 
 chai.use(chaiEnzyme())
 
@@ -16,6 +17,10 @@ describe('<App />', () => {
 
   it('contains a Title', () => {
     expect(app).to.have.descendants(Title)
+  })
+
+  it('contains the FishContainer', () => {
+    expect(app).to.have.descendants(FishContainer)
   })
 
   it('expects the Title to include "Hellow fishies"', () => {
