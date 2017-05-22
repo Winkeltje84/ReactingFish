@@ -3,7 +3,11 @@ import Title from '../components/Title'
 
 class FishContainer extends PureComponent {
   renderFish(fish, index) {
-    return null
+    return (
+      <article className="fish">
+        <h1>{ fish.name }</h1>
+      </article>
+    )
   }
 
   render() {
