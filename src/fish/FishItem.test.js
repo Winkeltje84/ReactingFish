@@ -31,8 +31,9 @@ describe('<FishItem />', () => {
   })
 
   it('renders the image', () => {
-    // expect(container.find('img')).to.have.text(fish.image)
+    expect(container.find('img')).to.have.length(2)
     TODO
+
   })
 
   it('shows the correct type', () => {

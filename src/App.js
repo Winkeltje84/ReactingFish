@@ -59,7 +59,7 @@ class App extends PureComponent {
     return (
       <div>
         <Title content="Hello fishies" />
-        <FishContainer fish={ [] } />
+        <FishContainer fish={ fish } />
       </div>
     )
   }
