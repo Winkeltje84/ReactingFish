@@ -10,7 +10,7 @@ const fish = [
     bony_fish: true,
     cartilaginous_fish: false,
 
-    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Latimeria_Chalumnae_-_Coelacanth_-_NHMW.jpg/1920px-Latimeria_Chalumnae_-_Coelacanth_-_NHMW.jpg',
+    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/Beluga.JPG/1920px-Beluga.JPG',
   },
   {
     name:'Sunfish',

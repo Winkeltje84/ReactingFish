@@ -5,7 +5,13 @@ class FishContainer extends PureComponent {
   renderFish(fish, index) {
     return (
       <article className="fish">
-        <h1>{ fish.name }</h1>
+        <h3>{ fish.name }</h3>
+        <img src={ fish.image }/>
+        <p>{ fish.summary }</p>
+        <ul>
+          { fish.bony_fish && <li>Type: Bony Fish </li> }
+          { fish.cartilaginous_fish && <li>Type: Cartilaginous Fish </li> }
+        </ul>
       </article>
     )
   }
