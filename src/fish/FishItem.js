@@ -1,10 +1,18 @@
-import React, { PureComponent } from 'react'
+import React, { PureComponent, PropTypes } from 'react'
 
 class FishItem extends PureComponent {
   // constructor(props) {
   //   super()
   //   console.log(props)
   // }
+
+  static propTypes = {
+    name: PropTypes.string.isRequired,
+    latin: PropTypes.string.isRequired,
+    image: PropTypes.string.isRequired,
+    bony_fish: PropTypes.bool,
+    cartilaginous_fish: PropTypes.bool,
+  }
 
   render() {
     const { name, latin, image, summary, bony_fish, cartilaginous_fish } = this.props
