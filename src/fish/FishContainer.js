@@ -14,7 +14,7 @@ class FishContainer extends PureComponent {
     return(
       <div className="fish wrapper">
         <header>
-          <Title content="fish" />
+          <Title content="Largest fish of the world" />
         </header>
 
         <main>
