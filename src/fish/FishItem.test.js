@@ -3,8 +3,6 @@ import chai, { expect } from 'chai'
 import { shallow } from 'enzyme'
 import chaiEnzyme from 'chai-enzyme'
 import FishItem from './FishItem'
-// import Bony from '../images/bony_fish.png'
-// import Cartilaginous from '../images/cartilaginous_fish.png'
 
 chai.use(chaiEnzyme)
 

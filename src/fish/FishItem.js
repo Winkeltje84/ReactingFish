@@ -1,6 +1,4 @@
 import React, { PureComponent, PropTypes } from 'react'
-import Bony from '../images/bony_fish.png'
-import Cartilaginous from '../images/cartilaginous_fish.png'
 
 class FishItem extends PureComponent {
   // constructor(props) {
@@ -28,9 +26,6 @@ class FishItem extends PureComponent {
         <ul>
           { bony_fish && <li>Type: Bony Fish</li>}
           { cartilaginous_fish && <li>Type: Cartilaginous Fish</li>}
-          { bony_fish && <img src={ Bony } style={{height: '200px'}} /> }
-          { cartilaginous_fish && <img src={ Cartilaginous } style={{height: '200px'}} /> }
-
         </ul>
       </article>
     )
