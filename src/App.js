@@ -4,23 +4,55 @@ import FishContainer from './fish/FishContainer'
 
 const fish = [
   {
-    name: 'Aal of Paling',
-    latin: 'Anguilla anguilla',
-    summary: 'Herkenning: 1. Het lichaam is slangachtig van vorm. 2. De borstvinnen bevinden zich direct achter de kop. 3. Op het achterste deel van het lichaam is, zowel onder als boven, een lange vinzoom aanwezig die uitloopt in de staartpunt. Buikvinnen ontbreken. Verspreiding: Noordoost Atlantische Oceaan, Noordzee, Oostzee, Middellandse Zee en Zwarte Zee van IJsland en Lapland in het noorden tot West-Afrika in het zuiden. In Nederland (steeds minder!) algemeen. Trekt meestal als doorzichtige glasaal van circa 6 cm lengte vanuit zee de binnenwateren in. Volwassen exemplaren trekken terug naar zee om zich voort te planten. De glasaalintrek is tegenwoordig sterk verminderd. Leefwijze: Trekt in het voorjaar als doorzichtige glasaal van circa 6 cm lengte vanuit zee de binnenwateren in, maar een gedeelte blijft hangen in de estuaria en dicht onder de kust. Wanneer de aal paairijp wordt, krijgen de flanken en buik een zilverglans, de rug wordt donkerder en het oog wordt groter. Deze zogenaamde ‘schieraal’ keert terug naar zee om zich voort te planten (vermoedelijk) in de Sargassozee, waarna ze sterven. Voedsel: Het voorkeursvoedsel bestaat uit wormen en kreeftachtigen, in zoet water ook uit insectenlarven. Grote exemplaren eten ook wel kleine vissen en weekdieren. Schieraal neemt geen voedsel tot zich.',
-    image: 'https://www.wnf.nl/upload_mm/f/9/1/3818_fullimage_paling_00040871_1079x694.jpg',
+    name: 'Sturgeons',
+    latin: 'Acipenseriformes',
+    summary: 'The largest species is the beluga sturgeon (Huso huso) of the Caspian and Black seas, the only extant bony fish to rival the massiveness of the ocean sunfish. The largest specimen considered reliable (based on remains) was caught in Volga estuary in 1827 and measured 7.3 m (24 ft) and weighed 1,474 kg (3,250 lb).[5] The slightly smaller kaluga (Huso dauricus) or great Siberian sturgeon has been weighed reliably up to 1,140 kg (2,510 lb) (Berg, 1932) and a length of 5.6 m (18 ft).[5][7] The North American white sturgeon (Acipenser transmontanus), unverified to 907 kg (2,000 lb) and 6.1 m (20 ft), Chinese, European Oceanic, and the Russian sturgeon (A. gueldenstaedtii), at as much as 1,000 kg (2,200 lb) and 5.5 m (18 ft) for a 75-year-old female, also can attain great sizes.[5] Atlantics and Baikal sturgeons are following as well. These fish are sometimes called the largest freshwater fish but sturgeons spend a great deal of time in brackish water and switch back and forth between saltwater and freshwater environments in their life cycle. Also included in this order are the paddlefish and the Chinese Paddlefish (Psephurus gladius), which may now be extinct and is at least critically endangered, is also a very large fish. Reportedly, fisherman as recently as the 1950s have caught paddlefish measuring up to 6.7 m (22 ft) in total length, although no specimen greater than 3.1 m (10 ft) has been scientifically measured. The weight of the Chinese Paddlefish is reportedly 300 to 500 kg (660 to 1,100 lb).',
+    bony_fish: true,
+    cartilaginous_fish: false,
+
+    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/Beluga.JPG/1920px-Beluga.JPG',
   },
   {
-    name:'Amerikaanse hondsvis',
-    latin:'Umbra pygmaea',
-    summary:'Herkenning: 1. Over de staartwortel loopt een donkere band. 2. De vinnen - zoals aangegeven bij de staartvin - zijn bolrond. 3. De rugvin ligt ver naar achteren.  Verspreiding: Uitheems; zeldzaam. Komt oorspronkelijk uit Noord-Amerika. In Noord-Brabant en Limburg plaatselijk vrij algemeen aanwezig in vennen en beken. Is goed bestand tegen verzuring van het water. Leefwijze: Voedsel: Voornamelijk insectenlarven, wormpjes, kleine kreeftachtigen en visbroed.',
-    image:'http://images.naturalis.nl/original/134158.jpg',
+    name:'Sunfish',
+    latin:'Mola mola',
+    summary:'The largest living bony fish (superclass Osteichthyes, which includes both ray-finned and lobe-finned fish) is the widely distributed ocean sunfish (Mola mola), a member of the order Tetraodontiformes. The record size sunfish crashed into a boat off Bird Island, Australia in 1910 and measured 4.3 m (14 ft) from fin-to-fin, 3.1 m (10 ft) in length and weighed about 2,300 kg (5,100 lb).',
+    bony_fish: true,
+    cartilaginous_fish: false,
+    image:'https://upload.wikimedia.org/wikipedia/commons/9/98/Mola_mola.jpg',
   },
   {
-    name:'Kesslers grondel',
-    latin:'Neogobius kesslerii',
-    summary:'Herkenning: 1. Ogen dicht bij elkaar en hoog in de kop geplaatst. Grote, brede kop met gezwollen wangen en lippen en een bovenstandige bek. Nek geschubd. 2. Buikvinnen aaneengegroeid tot een zuignap, waarmee de vis zich kan vastzetten op een harde ondergrond. 3. Lichaam en kop roodbruin gemarmerd. 4. De bases van beide rugvinnen raken elkaar. Rugvinnen met horizontale roodbruine banden op een lichtere ondergrond en zonder zwarte vlek.  Verspreiding: Uitheems, voor het eerst in Nederland waargenomen in 2007. Komt tegenwoordig met name in de grote rivieren algemeen voor. Zowel in zout als zoet water. Komt van oorsprong uit de Kaspische- en de Zwarte Zee en het stroomgebied van de Donau. Waarschijnlijk via het Main-Donaukanaal is Kessler’s grondel nu ook verspreid in het stroomgebied van de Rijn.  Leefwijze: Leeft bij voorkeur op stenige bodems (stortsteen). Kan meerdere keren per jaar paaien. De eieren worden afgezet op de onderzijde van stenen of in schelpen en worden bewaakt door het mannetje. Voedsel: Ongewervelde dieren, vooral kleine kreeftachtigen, maar ook kleine vissen.',
-    image:'http://www.ravon.nl/portals/0/Pages%202/kesslers%20grondel.jpg',
+    name:'Eels',
+    latin:'Anguilliformes',
+    summary:'The largest species of "true eel," if measured in weight and overall bulk, is the European conger (Conger conger). The maximum size of this species has been reported to 3 m (9.8 ft) and a mass of 110 kg (240 lb).[12] Several moray eels can equal or exceed the previous eel in length but do not weigh as much. The longest fish in the order, at up to 4 m (13 ft), is the slender giant moray (Strophidon sathete) of the Indo-Pacific oceans.',
+    bony_fish: true,
+    cartilaginous_fish: false,
+    image:'https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/European_conger.jpg/1920px-European_conger.jpg',
+  },
+  {
+    name: 'Ground sharks',
+    latin: 'Carcharhiniformes',
+    summary: 'The largest species of this order is the widely distributed tiger shark (Galeocerdo cuvier). Specimens have been verified to at least 5.5 m (18 ft) but even larger ones have been reported. One specimen, a gravid female caught off Australia and measuring only 5.5 m (18 ft) long, weighed an exceptional 1,524 kg (3,360 lb).[5] A female caught in 1957 reportedly measured 7.4 m (24 ft) and weighing 3,110 kg (6,860 lb), although this very outsized shark is not known to have been confirmed.[82] The largest of the infamous "requiem sharks" (in the Carcharhinus genus) seems to be the dusky shark (C. obscurus), at up to 4.2 m (14 ft) and a weight of 350 kg (770 lb).[83] However, the bulkier bull shark (C. leucas) has been estimated to weigh about 575 kg (1,268 lb) in recent specimens that measured over 4 m (13 ft) long.[84] The largest hammerhead shark is the great hammerhead (Sphyrna mokarran), which can reach 6.1 m (20 ft) and weigh 500 kg (1,100 lb).[85] The most species-rich shark family, the catsharks, are fairly small-bodied. The largest, the nursehound (Scyliorhinus stellaris), can grow up to 1.7 m (5.6 ft) and a weight of at least 10.8 kg (24 lb).',
+    bony_fish: false,
+    cartilaginous_fish: true,
+    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Tiger_shark%2C_Hawaii_Aii.jpg/1024px-Tiger_shark%2C_Hawaii_Aii.jpg',
+  },
+  {
+    name: 'Mackerel sharkes',
+    latin: 'Lamniformes',
+    summary: 'Most species in this order grow quite large. The largest living species is the basking shark (Cetorhinus maximus) of the worlds northern temperate oceans, also the second largest fish. The largest specimen, which was examined in 1851, measured 12.3 m (40 ft) long and weighed 16 tonnes.[5] Perhaps the most famous "big fish," is the great white shark (Carcharodon carcharias). Specimens have been measured up to 6.4 m (21 ft) and weighing 3,312 kg (7,302 lb), with great whites of at least 7 m (23 ft) long generally accepted.[5][90] The common thresher (Alopias vulpinus), can grow to 7.6 m (25 ft) and weigh over 510 kg (1,120 lb), but much of its length is comprised by its extreme tail.[91][92] Odd and recently discovered giants also live in this order: the slender, sword-snouted goblin shark (Mitsukurina owstoni), with unweighed specimens of up to approximately 6.17 m (20.2 ft), and the massive megamouth shark (Megachasma pelagios), up to 5.6 m (18 ft) long and a weight of 1,215 kg (2,679 lb).',
+    bony_fish: false,
+    cartilaginous_fish: true,
+    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Cetorhinus_maximus_by_greg_skomal.JPG/1280px-Cetorhinus_maximus_by_greg_skomal.JPG',
+  },
+  {
+    name: 'Skates and allies',
+    latin: 'Rajiformes',
+    summary: 'The largest and most diverse order of rays largest species is the giant guitarfish (Rhynchobatus djiddensis) of the Red Sea and the eastern Indian ocean. The top size of the species is 227 kg (500 lb) and 3.1 m (10 ft).[111] The largest of the skates is the common skate (Dipturus batis). This species can grow up to 2.85 m (9.4 ft) in length and weigh 97.1 kg (214 lb).',
+    bony_fish: false,
+    cartilaginous_fish: true,
+    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Rhynchobatus_djiddensis_durban.jpg/1920px-Rhynchobatus_djiddensis_durban.jpg',
   }
+
 ]
 class App extends PureComponent {
   render() {

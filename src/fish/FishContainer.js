@@ -1,20 +1,17 @@
 import React, { PureComponent } from 'react'
 import Title from '../components/Title'
+import FishItem from './FishItem'
 
 class FishContainer extends PureComponent {
   renderFish(fish, index) {
-    return (
-      <article className="fish">
-        <h1>{ fish.name }</h1>
-      </article>
-    )
+    return <FishItem key={index} { ...fish } />
   }
 
   render() {
     return(
       <div className="fish wrapper">
         <header>
-          <Title content="fish" />
+          <Title content="Largtst fish of the world" />
         </header>
 
         <main>
