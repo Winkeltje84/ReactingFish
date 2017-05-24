@@ -3,6 +3,8 @@ import chai, { expect } from 'chai'
 import { shallow } from 'enzyme'
 import chaiEnzyme from 'chai-enzyme'
 import FishItem from './FishItem'
+// import Bony from '../images/bony_fish.png'
+// import Cartilaginous from '../images/cartilaginous_fish.png'
 
 chai.use(chaiEnzyme)
 
@@ -42,17 +44,3 @@ describe('<FishItem />', () => {
   })
 
 })
-
-//
-// describe('<FishContainer />', () => {
-//   const container = shallow(<FishContainer fish={ fish } />)
-//
-//   it('is wrapped in a div with class name "fish" & "wrapper"', () => {
-//     expect(container).to.have.className('fish')
-//     expect(container).to.have.className('wrapper')
-//   })
-//
-//   it('renders all fishes as a FishItem', () => {
-//     expect(container).to.have.exactly(2).descendants(FishItem)
-//   })
-// })
