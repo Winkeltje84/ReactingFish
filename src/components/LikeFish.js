@@ -21,7 +21,7 @@ class LikeFish extends PureComponent {
 
   toggleLike() {
     this.setState({
-      liked: true
+      liked: !this.state.liked
     })
     console.log('Like button clicked!')
   }
