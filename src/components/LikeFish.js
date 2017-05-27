@@ -20,11 +20,14 @@ class LikeFish extends PureComponent {
   }
 
   toggleLike() {
+    this.setState({
+      liked: true
+    })
     console.log('Like button clicked!')
   }
 
   render() {
-    const liked = false
+    const { liked } = this.state
     return (
       <p className={ this.classNames() }>
         <button onClick={ this.toggleLike.bind(this) }>
