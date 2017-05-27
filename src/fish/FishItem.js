@@ -1,4 +1,5 @@
 import React, { PureComponent, PropTypes } from 'react'
+import LikeFish from '../components/LikeFish'
 
 class FishItem extends PureComponent {
   // constructor(props) {
@@ -26,6 +27,7 @@ class FishItem extends PureComponent {
         <ul>
           { bony_fish && <li>Type: Bony Fish</li>}
           { cartilaginous_fish && <li>Type: Cartilaginous Fish</li>}
+          <LikeFish />
         </ul>
       </article>
     )
