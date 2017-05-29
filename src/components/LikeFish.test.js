@@ -17,4 +17,17 @@ describe('<LikeFish />', () => {
   it('has an initial state for "liked", that is false', () => {
     expect(button.state('liked')).to.eq(false)
   })
+
+  describe('click it', () => {
+
+    it('the first time will change "liked" state to true', () => {
+      button.find('button').simulate('click')
+      expect(button.state('liked')).to.eq(true)
+    })
+
+    it('the second time will change "liked" back to false', () => {
+      button.find('button').simulate('click')
+      expect(button.state('liked')).to.eq(false)
+    })
+  })
 })
