@@ -3,31 +3,25 @@ import { shallow } from 'enzyme'
 import chai, { expect } from 'chai'
 import chaiEnzyme from 'chai-enzyme'
 import LikeFish from './LikeFish'
+import spies from 'chai-spies'
 
 chai.use(chaiEnzyme())
+chai.use(spies)
 
 describe('<LikeFish />', () => {
-  const button = shallow(<LikeFish />)
+  const toggleLike = chai.spy()
+  const button = shallow(<LikeFish liked={false} onChange={toggleLike} />)
 
   it('is wrapped in a <div> with class "like"', () => {
     expect(button).to.have.tagName('div')
     expect(button).to.have.className('like')
   })
 
-  it('has an initial state for "liked", that is false', () => {
-    expect(button.state('liked')).to.eq(false)
-  })
+  describe('clicking it', () => {
 
-  describe('click it', () => {
-
-    it('the first time will change "liked" state to true', () => {
-      button.find('button').simulate('click')
-      expect(button.state('liked')).to.eq(true)
-    })
-
-    it('the second time will change "liked" back to false', () => {
-      button.find('button').simulate('click')
-      expect(button.state('liked')).to.eq(false)
+    it('will call the "onChange"', () => {
+        button.find('button').simulate('click')
+        expect(toggleLike).to.have.been.called.exactly.once()
     })
   })
 })

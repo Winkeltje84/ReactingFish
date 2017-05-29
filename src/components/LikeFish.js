@@ -1,19 +1,16 @@
-import React, { PureComponent } from 'react'
+import React, { PureComponent, PropTypes } from 'react'
 import './LikeFish.sass'
 import HappyFish from '../images/Happy_fish.svg'
 import SadFish from '../images/Sad_fish.svg'
 
 class LikeFish extends PureComponent {
-  constructor() {
-    super()
-
-    this.state = {
-      liked: false
-    }
+  static propTypes = {
+    onChange: PropTypes.func.isRequired,
+    liked: PropTypes.bool.isRequired,
   }
 
   classNames() {
-    const { liked } = this.state
+    const { liked } = this.props
     let classes = 'like'
 
     if (liked) { classes += ' liked' }
@@ -22,14 +19,11 @@ class LikeFish extends PureComponent {
   }
 
   toggleLike() {
-    this.setState({
-      liked: !this.state.liked
-    })
-    console.log('Like button clicked!')
+    this.props.onChange()
   }
 
   render() {
-    const { liked } = this.state
+    const { liked } = this.props
     return (
       <div className={ this.classNames() }>
         <button onClick={ this.toggleLike.bind(this) }>
