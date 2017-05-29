@@ -31,16 +31,16 @@ class LikeFish extends PureComponent {
   render() {
     const { liked } = this.state
     return (
-      <p className={ this.classNames() }>
+      <div className={ this.classNames() }>
         <button onClick={ this.toggleLike.bind(this) }>
-          <img className="heart" style={{height: '50px'}} src={ liked ? HappyFish : SadFish } />
+          <img className="fish_icon" style={{height: '50px'}} src={ liked ? HappyFish : SadFish } />
           <span className="copy">
-            <img className="heart" style={{height: '50px'}} src={ liked ? HappyFish : SadFish } />
+            <img className="fish_icon" style={{height: '50px'}} src={ liked ? HappyFish : SadFish } />
           </span>
         </button>
-        <span className="likes">{ liked ? 'You like this' : null }
+        <span className="likes">{ liked ? 'You fish this!' : null }
         </span>
-      </p>
+      </div>
     )
   }
 }
