@@ -19,11 +19,19 @@ class LikeFish extends PureComponent {
   }
 
   toggleLike() {
+    // debugger
+    // const { liked } = this.props
     this.props.onChange()
+  }
+
+  onChange() {
+    debugger
+
   }
 
   render() {
     const { liked } = this.props
+    // debugger
     return (
       <div className={ this.classNames() }>
         <button onClick={ this.toggleLike.bind(this) }>
