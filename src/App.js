@@ -2,7 +2,7 @@ import React, { PureComponent } from 'react'
 import Title from './components/Title'
 import FishContainer from './fish/FishContainer'
 
-const fish = [
+export const fish = [
   {
     _id: '1',
     name: 'Sturgeons',
@@ -75,13 +75,20 @@ class App extends PureComponent {
     }
   }
 
+  updateFish(_id, liked) {
+    // debugger
+    console.log("updating fish")
+    debugger
+    // console.log(_id)
+  }
+
   render() {
     const { fish } = this.state
 
     return (
       <div>
         <Title content="Hello fishies" />
-        <FishContainer fish={ fish } />
+        <FishContainer fish={ fish } onChange={this.updateFish} />
       </div>
     )
   }

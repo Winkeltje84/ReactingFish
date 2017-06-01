@@ -16,7 +16,10 @@ class FishItem extends PureComponent {
   }
 
   render() {
-    const { name, latin, image, summary, bony_fish, cartilaginous_fish, liked } = this.props
+    const { _id, name, latin, image, summary, bony_fish, cartilaginous_fish, liked } = this.props
+    // debugger
+    console.log(this.props)
+    console.log(_id)
 
     // debugger
     return(
@@ -28,7 +31,7 @@ class FishItem extends PureComponent {
         <ul>
           { bony_fish && <li>Type: Bony Fish</li>}
           { cartilaginous_fish && <li>Type: Cartilaginous Fish</li>}
-          <LikeFish liked={ liked } />
+          <LikeFish liked={ liked } _id={ _id } onChange={ this.props.onChange } />
         </ul>
       </article>
     )

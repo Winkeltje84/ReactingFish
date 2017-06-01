@@ -10,7 +10,7 @@ class LikeFish extends PureComponent {
   }
 
   classNames() {
-    const { liked } = this.props
+    const { liked, _id } = this.props
     let classes = 'like'
 
     if (liked) { classes += ' liked' }
@@ -19,18 +19,14 @@ class LikeFish extends PureComponent {
   }
 
   toggleLike() {
+    const { liked, _id } = this.props
     // debugger
     // const { liked } = this.props
-    this.props.onChange()
-  }
-
-  onChange() {
-    debugger
-
+    this.props.onChange(_id, { liked: !liked })
   }
 
   render() {
-    const { liked } = this.props
+    const { liked, _id } = this.props
     // debugger
     return (
       <div className={ this.classNames() }>

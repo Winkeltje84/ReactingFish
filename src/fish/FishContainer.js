@@ -4,7 +4,7 @@ import FishItem from './FishItem'
 
 class FishContainer extends PureComponent {
   renderFish(fish, index) {
-    return <FishItem key={index} { ...fish } />
+    return <FishItem key={index} { ...fish } onChange={this.props.onChange } />
   }
 
   render() {
@@ -15,7 +15,7 @@ class FishContainer extends PureComponent {
         </header>
 
         <main>
-          { this.props.fish.map(this.renderFish) }
+          { this.props.fish.map(this.renderFish.bind(this)) }
         </main>
       </div>
     )
